@@ -1,0 +1,27 @@
+## Frontend pages
+
+- Home
+- Product Listing (Shop)
+- Product Details
+- Cart
+- Checkout
+- Sign In
+- Sign Up
+- My Listing
+- My Account
+- Wishlist
+- Order
+- Search
+- Contact
+- About
+
+## Packages
+- react-router-dom:     npm i react-router-dom
+- react-icons:          npm i react-icons
+- material-ui:          npm install @mui/material @emotion/react @emotion/styled 
+                        npm install @mui/material @mui/styled-engine-sc styled-components
+                        npm install @mui/icons-material
+                        
+- react-bootstrap-4:    npm i react-bootstrap-4
+                        npm i bootstrap@4.1.3
+- 
