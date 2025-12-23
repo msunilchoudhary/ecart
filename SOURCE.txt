@@ -24,4 +24,7 @@
                         
 - react-bootstrap-4:    npm i react-bootstrap-4
                         npm i bootstrap@4.1.3
-- 
+
+- react-slick           npm install react-slick --save
+
+- react-owl-carousel2   npm i react-owl-carousel2
