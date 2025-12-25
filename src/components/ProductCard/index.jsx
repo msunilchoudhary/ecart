@@ -2,16 +2,27 @@ import Button from "@mui/material/Button";
 import { BiCart, BiHeart, BiRupee } from "react-icons/bi";
 import { IoEyeOutline, IoStar, IoStarHalf } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import ProductDetailModal from "../ProductDetailModal";
+import { useState } from "react";
 
 function ProductCard({product}) {  
+    const [isOpenProductModal, setIsOpenProductModal] = useState(false)
+    const [getProduct, setGetProduct] = useState({})
+
+    const viewProductModal = (product) => {
+        setIsOpenProductModal(true)
+        console.log(product)
+        setGetProduct(product)
+    }
   return (
+    <>
     <div className="card" key={product.id}>
         <div to="/" className="card-img">
             <img src={product.img} alt="" />
             <div className="card-options">
                 <Button><BiHeart /></Button>
                 <Button><BiCart /></Button>
-                <Button><IoEyeOutline /></Button>
+                <Button onClick={()=> viewProductModal(product)}><IoEyeOutline /></Button>
             </div>
         </div>
         <div className="card-body">
@@ -29,9 +40,10 @@ function ProductCard({product}) {
                 <span className='price'><BiRupee />{product.price}</span> 
                 <span className="percentage">{Math.round((product.price - product.salePrice)/product.price * 100)}% Off</span>                           
             </p>
-        </div>
-    </div>  
-    
+        </div>        
+    </div>
+    <ProductDetailModal isOpenProductModal={isOpenProductModal} setIsOpenProductModal={setIsOpenProductModal} product={getProduct} />
+    </>
   )
 }
 
