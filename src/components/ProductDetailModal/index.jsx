@@ -41,6 +41,11 @@ function ProductDetailModal({isOpenProductModal, setIsOpenProductModal, product}
                             </p>
                             <p className='stock'>{product.stock}</p>
                             <p className='short-desc'>{product.shortDescription}</p>
+                            <div className="product-action d-flex align-items-center">
+                                <div className="quantity d-flex align-items-center">
+                                
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
