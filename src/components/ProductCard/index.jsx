@@ -11,14 +11,13 @@ function ProductCard({product}) {
 
     const viewProductModal = (product) => {
         setIsOpenProductModal(true)
-        console.log(product)
         setGetProduct(product)
     }
   return (
     <>
     <div className="card" key={product.id}>
         <div to="/" className="card-img">
-            <img src={product.img} alt="" />
+            <img src={product.img[0].url} alt="" />
             <div className="card-options">
                 <Button><BiHeart /></Button>
                 <Button><BiCart /></Button>

@@ -28,3 +28,30 @@
 - react-slick           npm install react-slick --save
 
 - react-owl-carousel2   npm i react-owl-carousel2
+- react-zoom-image      npm i react-zoom-image
+
+
+
+##Color Name and code
+Army Green:"#4B5320",
+Purple:"#800080",
+Black:"#000000"
+Brown:"#964B00",
+Camel:"#C19A6B",
+Coral Pink:"#F88379",
+Dark Gray:"#A9A9A9",
+Denim Blue:"#1560BD",
+Maroon:"#800000",
+Mustard:"#FFDB58",
+Navy Blue:"#000080",
+White:"#FFFFFF"
+Green:"#008000",
+Peacock Blue:"#096c6c",
+
+##Sizes
+Extra Small:"XS",
+Small:"S",
+Medium:"M",
+Large:"L",
+Extra Large:"XL",
+Extra2 Large:"XXL",

@@ -1,4 +1,9 @@
 import menTopWear1 from "../assets/images/men-top-wear-1.webp";
+import menTopWear1_1 from "../assets/images/men-top-wear-1-1.webp";
+import menTopWear1_2 from "../assets/images/men-top-wear-1-2.webp";
+import menTopWear1_3 from "../assets/images/men-top-wear-1-3.webp";
+import menTopWear1_4 from "../assets/images/men-top-wear-1-4.webp";
+import menTopWear1_5 from "../assets/images/men-top-wear-1-5.webp";
 import menTopWear2 from "../assets/images/men-top-wear-2.webp";
 import menTopWear3 from "../assets/images/men-top-wear-3.webp";
 
@@ -35,9 +40,36 @@ export const Products = [
         name:"Men Solid Round Neck Polyester Pink T-Shirt",
         shortDescription:"Boasting extended sleeves, this T-shirt provides ample coverage while maintaining a refined appearance.",
         description:"Made with a regular fit, this T-shirt strikes a balance between comfort and style, ensuring a polished yet effortless look. The well-structured fit drapes naturally over the body, making it suitable for various occasions. Owing to its thoughtfully crafted silhouette, this T-shirt offers unrestricted movement without appearing too loose or too snug.",
-        img:menTopWear1,
+        img:[
+                {
+                    url:menTopWear1,
+                    alt:"Men Solid Round Neck Polyester Pink T-Shirt"
+                }, 
+                {
+                    url:menTopWear1_1,
+                    alt:"Men Solid Round Neck Polyester Pink T-Shirt Back"
+                }, 
+                {
+                    url:menTopWear1_2,
+                    alt:"Men Solid Round Neck Polyester Pink T-Shirt Front"
+                }, 
+                {
+                    url:menTopWear1_3,
+                    alt:"Men Solid Round Neck Polyester Pink T-Shirt Right"
+                }, 
+                {
+                    url:menTopWear1_4,
+                    alt:"Men Solid Round Neck Polyester Pink T-Shirt Left"
+                }, 
+                {
+                    url:menTopWear1_5,
+                    alt:"Men Solid Round Neck Polyester Pink T-Shirt Front 2"
+                }
+            ],
         vendor:"VeBNoR",
         brand:"",
+        type:"Round Neck",
+        fabric:"Polyester",
         stock:"In Stock",
         category:"Men",
         subCategory:"Top Wear",
@@ -45,16 +77,23 @@ export const Products = [
         salePrice:"271",
         rating:"4.5",
         sizes:["XS", "S", "M", "L", "XL", "XXL"],
-        colors:["Army Green", "Purple", "Black", "Brown", "Camel", "Coral Pink", "Dark Gray", "Denim Blue", "Maroon", "Mustard", "Navy Blue", "White"]
+        colors:["#4B5320", "#800080", "#000000", "#964B00", "#C19A6B", "#F88379", "#A9A9A9", "#1560BD", "#800000", "#FFDB58", "#000080", "#FFFFFF"]
     },
     {
         id:"WTW0001",
         name:"Casual Sleeveless Solid Women Black Top",
         shortDescription:"Boasting extended sleeves, this T-shirt provides ample coverage while maintaining a refined appearance.",
         description:"Made with a regular fit, this T-shirt strikes a balance between comfort and style, ensuring a polished yet effortless look. The well-structured fit drapes naturally over the body, making it suitable for various occasions. Owing to its thoughtfully crafted silhouette, this T-shirt offers unrestricted movement without appearing too loose or too snug.",
-        img:womenTopWear1,
+        img:[
+                {
+                    url:womenTopWear1,
+                    alt:"Casual Sleeveless Solid Women Black Top",
+                }
+            ],
         vendor:"Mahhi Fashion",
         brand:"",
+        type:"Round Neck",
+        fabric:"Polyester",
         stock:"Only few left",
         category:"Men",
         subCategory:"Top Wear",
@@ -62,16 +101,23 @@ export const Products = [
         salePrice:"126",
         rating:"4.4",
         sizes:["XS", "S", "M", "L", "XL", "XXL"],
-        colors:["Army Green", "Purple", "Black", "Brown", "Camel", "Coral Pink", "Dark Gray", "Denim Blue", "Maroon", "Mustard", "Navy Blue", "White"]
+        colors:["#4B5320", "#800080", "#000000", "#964B00", "#C19A6B", "#F88379", "#A9A9A9", "#1560BD", "#800000", "#FFDB58", "#000080", "#FFFFFF"]
     },
     {
         id:"MTW0002",
         name:"Men Regular Fit Self Design Spread Collar Casual Shirt",
         shortDescription:"Boasting extended sleeves, this T-shirt provides ample coverage while maintaining a refined appearance.",
         description:"Made with a regular fit, this T-shirt strikes a balance between comfort and style, ensuring a polished yet effortless look. The well-structured fit drapes naturally over the body, making it suitable for various occasions. Owing to its thoughtfully crafted silhouette, this T-shirt offers unrestricted movement without appearing too loose or too snug.",
-        img:menTopWear2,
+        img:[
+            {
+                url:menTopWear2,
+                alt:"Men Regular Fit Self Design Spread Collar Casual Shirt",
+            }
+        ],
         vendor:"JACKBELLA",
         brand:"",
+        type:"Round Neck",
+        fabric:"Polyester",
         stock:"In Stock",
         category:"Men",
         subCategory:"Top Wear",
@@ -79,16 +125,23 @@ export const Products = [
         salePrice:"310",
         rating:"4.0",
         sizes:["XS", "S", "M", "L", "XL", "XXL"],
-        colors:["Army Green", "Purple", "Black", "Brown", "Camel", "Coral Pink", "Dark Gray", "Denim Blue", "Maroon", "Mustard", "Navy Blue", "White"]
+        colors:["#4B5320", "#800080", "#000000", "#964B00", "#C19A6B", "#F88379", "#A9A9A9", "#1560BD", "#800000", "#FFDB58", "#000080", "#FFFFFF"]
     },
     {
         id:"MTW0003",
         name:"Men Regular Fit Self Design Spread Collar Casual Shirt",
         shortDescription:"Boasting extended sleeves, this T-shirt provides ample coverage while maintaining a refined appearance.",
         description:"Made with a regular fit, this T-shirt strikes a balance between comfort and style, ensuring a polished yet effortless look. The well-structured fit drapes naturally over the body, making it suitable for various occasions. Owing to its thoughtfully crafted silhouette, this T-shirt offers unrestricted movement without appearing too loose or too snug.",
-        img:menTopWear3,
+        img:[
+            {
+                url:menTopWear3,
+                alt:"Men Regular Fit Self Design Spread Collar Casual Shirt",
+            }
+        ],
         vendor:"AUSK",
         brand:"",
+        type:"Round Neck",
+        fabric:"Polyester",
         stock:"Only few left",
         category:"Men",
         subCategory:"Top Wear",
@@ -96,16 +149,23 @@ export const Products = [
         salePrice:"272",
         rating:"3.8",
         sizes:["XS", "S", "M", "L", "XL", "XXL"],
-        colors:["Army Green", "Purple", "Black", "Brown", "Camel", "Coral Pink", "Dark Gray", "Denim Blue", "Maroon", "Mustard", "Navy Blue", "White"]
+        colors:["#4B5320", "#800080", "#000000", "#964B00", "#C19A6B", "#F88379", "#A9A9A9", "#1560BD", "#800000", "#FFDB58", "#000080", "#FFFFFF"]
     },    
     {
         id:"WTW0002",
         name:"Women Solid Round Neck Cotton Blend Black T-Shirt",
         shortDescription:"Boasting extended sleeves, this T-shirt provides ample coverage while maintaining a refined appearance.",
         description:"Made with a regular fit, this T-shirt strikes a balance between comfort and style, ensuring a polished yet effortless look. The well-structured fit drapes naturally over the body, making it suitable for various occasions. Owing to its thoughtfully crafted silhouette, this T-shirt offers unrestricted movement without appearing too loose or too snug.",
-        img:womenTopWear2,
+        img:[
+            {
+                url:womenTopWear2,
+                alt:"Women Solid Round Neck Cotton Blend Black T-Shirt",
+            }
+        ],
         vendor:"Kanchan World",
         brand:"",
+        type:"Round Neck",
+        fabric:"Polyester",
         stock:"Only few left",
         category:"Men",
         subCategory:"Top Wear",
@@ -113,16 +173,23 @@ export const Products = [
         salePrice:"205",
         rating:"5.0",
         sizes:["XS", "S", "M", "L", "XL", "XXL"],
-        colors:["Army Green", "Purple", "Black", "Brown", "Camel", "Coral Pink", "Dark Gray", "Denim Blue", "Maroon", "Mustard", "Navy Blue", "White"]
+        colors:["#4B5320", "#800080", "#000000", "#964B00", "#C19A6B", "#F88379", "#A9A9A9", "#1560BD", "#800000", "#FFDB58", "#000080", "#FFFFFF"]
     },
     {
         id:"WTW0003",
         name:"Women Solid Round Neck Polyester Purple T-Shirt",
         shortDescription:"Boasting extended sleeves, this T-shirt provides ample coverage while maintaining a refined appearance.",
         description:"Made with a regular fit, this T-shirt strikes a balance between comfort and style, ensuring a polished yet effortless look. The well-structured fit drapes naturally over the body, making it suitable for various occasions. Owing to its thoughtfully crafted silhouette, this T-shirt offers unrestricted movement without appearing too loose or too snug.",
-        img:womenTopWear3,
+        img:[
+            {
+                url:womenTopWear3,
+                alt:"Women Solid Round Neck Polyester Purple T-Shirt",
+            }
+        ],
         vendor:"NEXSUS APPARELS",
         brand:"",
+        type:"Round Neck",
+        fabric:"Polyester",
         stock:"Only 1 left",
         category:"Men",
         subCategory:"Top Wear",
@@ -130,7 +197,7 @@ export const Products = [
         salePrice:"299",
         rating:"4.3",
         sizes:["XS", "S", "M", "L", "XL", "XXL"],
-        colors:["Army Green", "Purple", "Black", "Brown", "Camel", "Coral Pink", "Dark Gray", "Denim Blue", "Maroon", "Mustard", "Navy Blue", "White"]
+        colors:["#4B5320", "#800080", "#000000", "#964B00", "#C19A6B", "#F88379", "#A9A9A9", "#1560BD", "#800000", "#FFDB58", "#000080", "#FFFFFF"]
     }
 ]
 
