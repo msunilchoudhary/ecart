@@ -2,7 +2,7 @@ import Button from '@mui/material/Button'
 import React, { useState } from 'react'
 
 function ProductSizes({productSizes}) {
-    const [selectedSize, setSelectedSize] = useState("")
+    const [selectedSize, setSelectedSize] = useState("L")
   return (
     <>
         <div className="product-sizes">

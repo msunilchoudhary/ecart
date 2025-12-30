@@ -7,7 +7,7 @@ import fashion from "../../assets/images/bikerfashion.webp";
 import { useState } from 'react';
 
 function Navbar() {
-    const [isOpenCatLists, setIsOpenCatLists] = useState(true)
+    const [isOpenCatLists, setIsOpenCatLists] = useState(false)
   return (
     <div className='navbar'>
         <div className="container">
@@ -20,35 +20,35 @@ function Navbar() {
                 {isOpenCatLists === true && <div className="subcategories">
                     <div className="catList-wrap shadow-1">
                         <ul className='catLists'>
-                            <li><Link to="/">Mobiles & Tablets</Link></li>
+                            <li><Link to="/shop">Mobiles & Tablets</Link></li>
                             <li><Link to="/">Fashion <IoIosArrowForward /></Link>
                                 <div className="category-submenu">
                                     <h4>Fashion</h4>
                                     <ul className='category-submenu-lists'>
-                                        <li><Link to="/">Men Top wear</Link></li>
-                                        <li><Link to="/">Men Bottom wear</Link></li>
-                                        <li><Link to="/">Women Bottom Wear</Link></li>
-                                        <li><Link to="/">Men Night wear</Link></li>
-                                        <li><Link to="/">women Night wear</Link></li>
-                                        <li><Link to="/">Men Summer wear</Link></li>
-                                        <li><Link to="/">Women Summer wear</Link></li>
-                                        <li><Link to="/">Men Winter wear</Link></li>
-                                        <li><Link to="/">Women Winter wear</Link></li>
+                                        <li><Link to="/shop">Men Top wear</Link></li>
+                                        <li><Link to="/shop">Men Bottom wear</Link></li>
+                                        <li><Link to="/shop">Women Bottom Wear</Link></li>
+                                        <li><Link to="/shop">Men Night wear</Link></li>
+                                        <li><Link to="/shop">women Night wear</Link></li>
+                                        <li><Link to="/shop">Men Summer wear</Link></li>
+                                        <li><Link to="/shop">Women Summer wear</Link></li>
+                                        <li><Link to="/shop">Men Winter wear</Link></li>
+                                        <li><Link to="/shop">Women Winter wear</Link></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li><Link to="/">Electronics</Link></li>
-                            <li><Link to="/">home & Furnitures</Link></li>
-                            <li><Link to="/">Grocery</Link></li>
-                            <li><Link to="/">Beauty & Personal Care</Link></li>
-                            <li><Link to="/">TVs & Appliances</Link></li>
-                            <li><Link to="/">Jewellery & Accessories</Link></li>
-                            <li><Link to="/">Books & stationaries</Link></li>
-                            <li><Link to="/">Musical Instruments</Link></li>
-                            <li><Link to="/">Pet Supplies</Link></li>
-                            <li><Link to="/">Bags & Footwear</Link></li>
-                            <li><Link to="/">Sports & Fitness</Link></li>
-                            <li><Link to="/">Kids & Toys</Link></li>
+                            <li><Link to="/shop">Electronics</Link></li>
+                            <li><Link to="/shop">home & Furnitures</Link></li>
+                            <li><Link to="/shop">Grocery</Link></li>
+                            <li><Link to="/shop">Beauty & Personal Care</Link></li>
+                            <li><Link to="/shop">TVs & Appliances</Link></li>
+                            <li><Link to="/shop">Jewellery & Accessories</Link></li>
+                            <li><Link to="/shop">Books & stationaries</Link></li>
+                            <li><Link to="/shop">Musical Instruments</Link></li>
+                            <li><Link to="/shop">Pet Supplies</Link></li>
+                            <li><Link to="/shop">Bags & Footwear</Link></li>
+                            <li><Link to="/shop">Sports & Fitness</Link></li>
+                            <li><Link to="/shop">Kids & Toys</Link></li>
                         </ul>
                     </div>
                 </div>}
@@ -57,7 +57,7 @@ function Navbar() {
             <div className="col-lg-9 position-inherit">
                 <div className="menubar">
                     <ul className='menu-list'>
-                        <li><Link to="/">Mobiles & Tablets</Link></li>
+                        <li><Link to="/shop">Mobiles & Tablets</Link></li>
                         <li><Link to="/">Fashion <span><IoIosArrowDown /></span></Link>
                             <div className="dropdown-menu-wrap">
                                 <div className="container">
@@ -65,45 +65,45 @@ function Navbar() {
                                         <div className="col-lg-3">
                                             <h4>Men</h4>
                                             <ul className='submenu-list'>
-                                                <li><Link>Top Wear</Link></li>
-                                                <li><Link>Bottom Wear</Link></li>
-                                                <li><Link>Ethnic Wear</Link></li>
-                                                <li><Link>Innerwear</Link></li>
-                                                <li><Link>Sports Wear</Link></li>
-                                                <li><Link>Night Wear</Link></li>
-                                                <li><Link>Winter wear</Link></li>
-                                                <li><Link>combo Store</Link></li>
-                                                <li><Link>Accessories</Link></li>
-                                                <li><Link>Footwear</Link></li>
+                                                <li><Link to="/shop">Top Wear</Link></li>
+                                                <li><Link to="/shop">Bottom Wear</Link></li>
+                                                <li><Link to="/shop">Ethnic Wear</Link></li>
+                                                <li><Link to="/shop">Innerwear</Link></li>
+                                                <li><Link to="/shop">Sports Wear</Link></li>
+                                                <li><Link to="/shop">Night Wear</Link></li>
+                                                <li><Link to="/shop">Winter wear</Link></li>
+                                                <li><Link to="/shop">combo Store</Link></li>
+                                                <li><Link to="/shop">Accessories</Link></li>
+                                                <li><Link to="/shop">Footwear</Link></li>
                                             </ul>
                                         </div>
                                         <div className="col-lg-3">
                                             <h4>Women</h4>
                                             <ul className='submenu-list'>
-                                                <li><Link>Sarees</Link></li>
-                                                <li><Link>Kurtis</Link></li>
-                                                <li><Link>Kurta Sets</Link></li>
-                                                <li><Link>Dupatta Sets</Link></li>
-                                                <li><Link>Suits & Dress Material</Link></li>
-                                                <li><Link>Lehengas</Link></li>
-                                                <li><Link>Blouses</Link></li>
-                                                <li><Link>Gowns</Link></li>
-                                                <li><Link>Jeans & Jeggings</Link></li>
-                                                <li><Link>Palazzos & Leggings</Link></li>
-                                                <li><Link>Trousers & Pants</Link></li>
-                                                <li><Link>wintter wear</Link></li>
+                                                <li><Link to="/shop">Sarees</Link></li>
+                                                <li><Link to="/shop">Kurtis</Link></li>
+                                                <li><Link to="/shop">Kurta Sets</Link></li>
+                                                <li><Link to="/shop">Dupatta Sets</Link></li>
+                                                <li><Link to="/shop">Suits & Dress Material</Link></li>
+                                                <li><Link to="/shop">Lehengas</Link></li>
+                                                <li><Link to="/shop">Blouses</Link></li>
+                                                <li><Link to="/shop">Gowns</Link></li>
+                                                <li><Link to="/shop">Jeans & Jeggings</Link></li>
+                                                <li><Link to="/shop">Palazzos & Leggings</Link></li>
+                                                <li><Link to="/shop">Trousers & Pants</Link></li>
+                                                <li><Link to="/shop">wintter wear</Link></li>
                                             </ul>
                                         </div>
                                         <div className="col-lg-3">
                                             <h4>Kids</h4>
                                             <ul className='submenu-list'>
-                                                <li><Link>Top wears</Link></li>
-                                                <li><Link>Bottom wears</Link></li>
-                                                <li><Link>Jeans</Link></li>
-                                                <li><Link>Night Wears</Link></li>
-                                                <li><Link>Summer Wear</Link></li>
-                                                <li><Link>Winter Wear</Link></li>
-                                                <li><Link>Shoes</Link></li>
+                                                <li><Link to="/shop">Top wears</Link></li>
+                                                <li><Link to="/shop">Bottom wears</Link></li>
+                                                <li><Link to="/shop">Jeans</Link></li>
+                                                <li><Link to="/shop">Night Wears</Link></li>
+                                                <li><Link to="/shop">Summer Wear</Link></li>
+                                                <li><Link to="/shop">Winter Wear</Link></li>
+                                                <li><Link to="/shop">Shoes</Link></li>
                                             </ul>
                                         </div>
                                         <div className="col-lg-3">
@@ -113,9 +113,9 @@ function Navbar() {
                                 </div>
                             </div>
                         </li>
-                        <li><Link to="/">Electronics</Link></li>
-                        <li><Link to="/">home & Furnitures</Link></li>
-                        <li><Link to="/">Grocery</Link></li>
+                        <li><Link to="/shop">Electronics</Link></li>
+                        <li><Link to="/shop">home & Furnitures</Link></li>
+                        <li><Link to="/shop">Grocery</Link></li>
                         <li><Link to="/">Blog</Link></li>
                         <li><Link to="/">Contact Us</Link></li>
                     </ul>

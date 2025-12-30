@@ -1,45 +1,47 @@
+import React, { useState } from 'react'
+import PageBreadcrumbs from '../../components/Breadcrumbs'
 import Button from '@mui/material/Button'
-import Dialog from '@mui/material/Dialog'
+import { IoIosGitCompare, IoIosHeartEmpty } from 'react-icons/io'
+import AddToCart from '../../components/AddToCart'
+import Quantity from '../../components/Quantity'
+import ProductSizes from '../../components/ProductSizes'
+import { BiRupee } from 'react-icons/bi'
 import Rating from '@mui/material/Rating'
-import { MdClose } from 'react-icons/md'
-import { BiRupee } from "react-icons/bi";
-import Quantity from '../Quantity';
-import AddToCart from '../AddToCart';
-import ProductSizes from '../ProductSizes';
-import ProductZoomImage from '../ProductZoomImage';
-import { IoIosGitCompare, IoIosHeartEmpty } from 'react-icons/io';
-import { useState } from 'react';
-import AppColors from '../AppColors';
+import ProductZoomImage from '../../components/ProductZoomImage'
+import { useContext } from 'react'
+import { AppContext } from '../../App'
+import AppTabs from '../../components/AppTabs'
+import AppColors from '../../components/AppColors'
 
-function ProductDetailModal({isOpenProductModal, setIsOpenProductModal, product}) {
-    
+function ProductDetails() {
     const [wishlisted, setWishlisted] = useState(false)
-    
+    const{Products} = useContext(AppContext);    
+    const product = Products[0];
   return (
-    <Dialog open={isOpenProductModal} onClose={()=> setIsOpenProductModal(false)} className='productModal'>
-        <div className="product-modal-box">
-            <Button className="modal-close-btn" onClick={()=> setIsOpenProductModal(false)}><MdClose /></Button>
+    <div className='main-page-wrap'>
+        <div className="container">
+            <PageBreadcrumbs categoryName="Mens Top Wear" pageName={product?.name} />
 
             <div className="product-detail-wrap">                
                 <div className="row">
                     <div className="col-lg-5">
                         <div className="product-zoom-img-wrap">
-                            <ProductZoomImage  images={product?.img} />
+                            <ProductZoomImage images={product?.img} />
                         </div>
                     </div>
                     <div className="col-lg-7">
                         <div className="product-info-wrap">
                             <div className="modal-header flex-column">
-                                <h2>{product?.name}</h2>
+                                <h2>{product.name}</h2>
                                 <div className="d-flex align-items-center">
                                     <div className="d-flex align-items-center">
                                         <span>Brand:</span>
-                                        <b className='ml-1'>{product?.vendor}</b>
+                                        <b className='ml-1'>{product.vendor}</b>
                                     </div>
                                     <div className="d-flex align-items-center ml-5">
                                         <span>Rating:</span>
                                         <span className='ml-1'>
-                                            <Rating name="text-feedback" className='rating' value={product?.rating} readOnly precision={0.5} size='small'/>
+                                            <Rating name="text-feedback" className='rating' value={product.rating} readOnly precision={0.5} size='small'/>
                                         </span>
                                     </div>
                                 </div>
@@ -67,13 +69,18 @@ function ProductDetailModal({isOpenProductModal, setIsOpenProductModal, product}
                                 <Button onClick={() => setWishlisted(true)} variant={wishlisted === true ? "contained" : "outlined"}><IoIosHeartEmpty />Add To Wishlist</Button>
                                 <Button variant="outlined"><IoIosGitCompare />Compare</Button>
                             </div>
+                            <div className="product-contents mt-4">
+                                <h4>Product Details</h4>                
+                                <AppTabs />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>       
-        </div>        
-    </Dialog>
+            </div>            
+        </div>
+         
+    </div>
   )
 }
 
-export default ProductDetailModal
+export default ProductDetails

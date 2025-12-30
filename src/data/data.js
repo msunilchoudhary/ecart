@@ -67,12 +67,13 @@ export const Products = [
                 }
             ],
         vendor:"VeBNoR",
-        brand:"",
+        brand:"VeBNoR",
         type:"Round Neck",
         fabric:"Polyester",
         stock:"In Stock",
         category:"Men",
         subCategory:"Top Wear",
+        trend:"Sports, Solids, Knits, All-over Printed",
         price:"999",
         salePrice:"271",
         rating:"4.5",
@@ -321,4 +322,21 @@ export const TrendingProducts = [
         offerPrice:"15499",
         oldPrice:"17999"
     }
+]
+
+export  const colors = [
+    {name:"Army Green", code:"#4B5320", tln:34},
+    {name:"Purple", code:"#800080", tln:102},
+    {name:"Black", code:"#000000", tln:43},
+    {name:"Brown", code:"#964B00", tln:53},
+    {name:"Camel", code:"#C19A6B", tln:12},
+    {name:"Coral Pink", code:"#F88379", tln:22},
+    {name:"Dark Gray", code:"#A9A9A9", tln:32},
+    {name:"Denim Blue", code:"#1560BD", tln:23},
+    {name:"Maroon", code:"#800000", tln:12},
+    {name:"Mustard", code:"#FFDB58", tln:21},
+    {name:"Navy Blue", code:"#000080", tln:32},
+    {name:"White", code:"#FFFFFF", tln:43},
+    {name:"Green", code:"#008000", tln:56},
+    {name:"Peacock Blue", code:"#096c6c", tln:11},
 ]

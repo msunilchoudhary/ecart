@@ -1,28 +1,32 @@
 
-import { useRef } from "react";
+import { useMemo, useRef } from "react";
 import InnerImageZoom from "react-inner-image-zoom";
 import Slider from "react-slick";
 
 function ProductZoomImage({images}) {
   const zoomSliderBig = useRef();
   const zoomSlider = useRef();
-  const slideSettings = {
+  const slideSettings = useMemo(()=> (
+    {
       dots:false,
       arrows:false,
       infinity:true,
       slidesToShow:1,
       slidesToScroll:1,
       speed:500,
-  }
-  const slideSettings2 = {
+    }
+  ),[]) 
+  const slideSettings2 = useMemo(()=>(
+    {
       dots:false,
       arrows:true,
       infinity:true,
-      slidesToShow:4,
+      slidesToShow:6,
       slidesToScroll:1,
       speed:500,
-  }
-  const goto = (index) => {
+    }
+  ),[]) 
+  const goToSlide = (index) => {
     zoomSliderBig.current?.slickGoTo(index);
     zoomSlider.current?.slickGoTo(index)
   }
@@ -37,7 +41,7 @@ function ProductZoomImage({images}) {
       </Slider>
       <Slider {...slideSettings2} className="galleryThumbs" ref={zoomSlider}>
         {images.map((img, i) => (
-          <div className="thumb" key={i} onClick={()=> goto(i)}><img src={img.url} alt={img.alt} /></div>
+          <div className="thumb" key={i} onClick={()=> goToSlide(i)}><img src={img.url} alt={img.alt} /></div>
           ))}
       </Slider>
     </div>

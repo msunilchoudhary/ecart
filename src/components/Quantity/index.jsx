@@ -15,7 +15,7 @@ function Quantity({min = 1, max = Infinity}) {
     <>
         <div className="quantity d-flex align-items-center">
             <Button onClick={handleQuantityDecrease} disabled={quantity <= min}><FaMinus /></Button>
-            <input type='text' value={quantity} />
+            <input type='text' value={quantity}  readOnly />
             <Button onClick={handleQuantityIncrease} disabled={quantity >= max}><FaPlus /></Button>
         </div>
     </>

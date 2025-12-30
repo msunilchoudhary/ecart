@@ -2,21 +2,14 @@ import Button from "@mui/material/Button";
 import { MdClose, MdKeyboardArrowDown } from "react-icons/md";
 import Dialog from "@mui/material/Dialog";
 import Search from "../Search";
-import { useMemo, useState } from "react";
-import { States } from "../../data/data";
+import { useContext, } from "react";
+import { AppContext } from "../../App";
 
 function LocationDropdown() {
-  const [isOpenModal, setIsOpenModal] = useState(false);
-  const [stateName, setStateName] = useState("Delhi");
-  const [searchQuery, setSearchQuery] = useState("")
-
-  const filteredStates  = useMemo(() => {
-    if(!searchQuery) return States;
-    return States.filter((state) => state.toLowerCase().includes(searchQuery.toLowerCase()))
-  },[searchQuery])
-
+  const{selectedLocation, setSelectedLocation, filteredStates, isOpenModal, setIsOpenModal, setSearchQuery} = useContext(AppContext)
+ 
   const handleSelectState = (name) => {
-    setStateName(name)
+    setSelectedLocation(name)
     setIsOpenModal(false)
   }
 
@@ -27,7 +20,7 @@ function LocationDropdown() {
       <Button className="country-dropdown d-flex justify-content-between" onClick={()=> setIsOpenModal(true)}>
         <div className="info d-flex flex-column">
           <span>Your Location</span>
-          <div>{stateName}</div>
+          <div>{selectedLocation}</div>
         </div>
         <MdKeyboardArrowDown />
       </Button>
@@ -41,7 +34,7 @@ function LocationDropdown() {
 
           <div className="location-lists">
             <ul>
-              {filteredStates.map((state, index) => <li key={index}><Button onClick={()=> handleSelectState(state)} className={`${stateName === state ? "active" : ""}`}>{state}</Button></li>)}              
+              {filteredStates.map((state, index) => <li key={index}><Button onClick={()=> handleSelectState(state)} className={`${selectedLocation === state ? "active" : ""}`}>{state}</Button></li>)}              
             </ul>
           </div>
         </div>        

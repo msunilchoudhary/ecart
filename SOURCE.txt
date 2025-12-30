@@ -16,20 +16,18 @@
 - About
 
 ## Packages
-- react-router-dom:     npm i react-router-dom
-- react-icons:          npm i react-icons
-- material-ui:          npm install @mui/material @emotion/react @emotion/styled 
-                        npm install @mui/material @mui/styled-engine-sc styled-components
-                        npm install @mui/icons-material
-                        
-- react-bootstrap-4:    npm i react-bootstrap-4
-                        npm i bootstrap@4.1.3
-
-- react-slick           npm install react-slick --save
-
-- react-owl-carousel2   npm i react-owl-carousel2
-- react-zoom-image      npm i react-zoom-image
-
+- react-router-dom:             npm i react-router-dom
+- react-icons:                  npm i react-icons
+- material-ui:                  npm install @mui/material @emotion/react @emotion/styled 
+                                npm install @mui/material @mui/styled-engine-sc styled-components
+                                npm install @mui/icons-material                        
+- react-bootstrap-4:            npm i react-bootstrap-4
+                                npm i bootstrap@4.1.3
+- react-slick                   npm install react-slick --save
+- react-owl-carousel2           npm i react-owl-carousel2
+- react-zoom-image              npm i react-zoom-image
+- react-range-slider-input      npm i react-range-slider-input
+    
 
 
 ##Color Name and code
