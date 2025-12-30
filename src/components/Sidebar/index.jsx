@@ -8,7 +8,6 @@ import { BiRupee } from "react-icons/bi";
 
 function Sidebar() {
     const [priceValue, setPriceValue] = useState([100, 60000]);
-    const [priceValue2, setPriceValue2] = useState(0);
     
     const categories = [
       {name:"Mobiles & Tablets", total:30,},
