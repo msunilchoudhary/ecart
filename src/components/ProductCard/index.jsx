@@ -16,7 +16,7 @@ function ProductCard({product}) {
     }
   return (
     <>
-    <div className="card" key={product?.id}>
+    <div className="card">
         <div to="/" className="card-img">
             <img src={product?.img[0].url} alt="" />
             <div className="card-options">

@@ -12,16 +12,17 @@ import { useContext } from 'react'
 import { AppContext } from '../../App'
 import AppTabs from '../../components/AppTabs'
 import AppColors from '../../components/AppColors'
+import RelatedProducts from '../../components/RelatedProducts'
 
 function ProductDetails() {
     const [wishlisted, setWishlisted] = useState(false)
     const{Products} = useContext(AppContext);    
     const product = Products[0];
+
   return (
     <div className='main-page-wrap'>
         <div className="container">
             <PageBreadcrumbs categoryName="Mens Top Wear" pageName={product?.name} />
-
             <div className="product-detail-wrap">                
                 <div className="row">
                     <div className="col-lg-5">
@@ -39,10 +40,10 @@ function ProductDetails() {
                                         <b className='ml-1'>{product.vendor}</b>
                                     </div>
                                     <div className="d-flex align-items-center ml-5">
-                                        <span>Rating:</span>
                                         <span className='ml-1'>
                                             <Rating name="text-feedback" className='rating' value={product.rating} readOnly precision={0.5} size='small'/>
                                         </span>
+                                        <span>1,14,412 ratings and 5,250 reviews</span>
                                     </div>
                                 </div>
                             </div>
@@ -76,7 +77,15 @@ function ProductDetails() {
                         </div>
                     </div>
                 </div>
-            </div>            
+            </div>  
+
+            <div className="section mt-3">                
+                <RelatedProducts sectionTitle="Related Products" />
+            </div>
+
+            <div className="section mt-3">
+                <RelatedProducts sectionTitle="Recent Views Products" />
+            </div>
         </div>
          
     </div>
