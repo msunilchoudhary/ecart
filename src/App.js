@@ -14,6 +14,8 @@ import { createContext, useMemo, useState } from "react";
 import { Products, States } from "./data/data";
 import LocationDropdown from "./components/LocationDropdown";
 import ProductDetails from "./pages/ProductDetails";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
 
 export const AppContext = createContext()
 
@@ -21,6 +23,7 @@ function App () {
   const [selectedLocation, setSelectedLocation] = useState("Delhi");
   const [isOpenModal, setIsOpenModal] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  const [isHeaderFooterShow, setIsHeaderFooterShow] = useState(true)
 
   const filteredStates  = useMemo(() => {
       if(!searchQuery) return States;
@@ -35,20 +38,23 @@ function App () {
     filteredStates,
     searchQuery, 
     setSearchQuery,
-    Products,
+    Products, 
+    setIsHeaderFooterShow
   }
 
   return (
     <BrowserRouter>
       <AppContext.Provider value={values}>
-      <Header />
+      {isHeaderFooterShow === true && <Header />}      
       <Routes>
         <Route path='/' exact={true} element={<Home />} />
         <Route path='/category/:id' exact={true} element={<Shop />} />
         <Route path='/product/:id' exact={true} element={<ProductDetails />} />
         <Route path='/cart' exact={true} element={<Cart />} />
+        <Route path='/signIn' exact={true} element={<Login />} />
+        <Route path='/signUp' exact={true} element={<SignUp />} />
       </Routes>
-      <Footer />
+      {isHeaderFooterShow === true && <Footer />} 
       {isOpenModal === true && <LocationDropdown />}
       </AppContext.Provider>
     </BrowserRouter>

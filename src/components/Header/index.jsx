@@ -32,17 +32,17 @@ function Header() {
                                 <LocationDropdown />
                                 <Search placeholder="Search By Category, product etc." />
                                 <div className="right-part d-flex justify-content-between align-items-center">
-                                    <Button className="user-btn">
+                                    <Link to="/signIn" className="user-btn">
                                         <FiUser />
-                                    </Button>
-                                    <Button className="wishlist-btn relative">
+                                    </Link>
+                                    <Link to="/" className="wishlist-btn relative">
                                         <FaRegHeart />
                                         <span className="badge">0</span>
-                                    </Button>
-                                    <Button className="cart-btn relative">
+                                    </Link>
+                                    <Link to="/cart" className="cart-btn relative">
                                         <BsCart2 />
                                         <span className="badge">0</span>
-                                    </Button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
